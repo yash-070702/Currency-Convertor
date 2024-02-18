@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./images/currency.avif');
+    background-size: cover;
+}
+body h3{
+    font-size: 50px;
+    color: antiquewhite;
+}
+.convertor-container{
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    padding:24px 30px;
+    text-align: center;
+}
+
+.convertor-container h1{
+font-size: 28px;
+text-decoration: underline;
+color:#202124;
+margin-bottom: 40px;
+}
+
+.convertor-container .input-container{
+    border:2px solid #bbbbbd;
+    border-radius: 4px;
+    margin-block: 20px;
+}
+
+.convertor-container .input-container:focus-within
+{
+    border-color: #0056b3;
+}
+
+.convertor-container .input-container input , .convertor-container .input-container select{
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size:20px;
+    padding:8px;
+    overflow: hidden;
+}
+
+.convertor-container .arrow{
+    font-size: 44px;
+}
+
+.convertor-container .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+ width: 100vw;
+ transform: translateY(49.5%);
+ bottom: 0%;
+
+}
+
+.footer p {
+    margin: 0;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+@media(max-width:420px){
+    .convertor-container{
+        width:80%;
+        margin:0 auto;
+    }
+
+    .convertor-container h1{
+        font-size: 22px;
+    }
+
+    .convertor-container .input-container{
+        border: none;
+    }
+
+    .convertor-container .input-container input , .convertor-container .input-container select{
+        border: 1px solid #ccc;
+        margin-block:4px;
+        width: 100%;
+    }
+    body h3{
+        font-size: 22px;
+        text-align: center;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+}
+@media(max-width:630px){
+    body h3{
+        font-size: 2rem;
+    }
+    .footer p{
+        font-size: 20px;
+    }
+    .footer {
+       
+     transform: translateY(30.5%);
+   
+    
+    }
+}
